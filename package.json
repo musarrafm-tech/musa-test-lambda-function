@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo 'No tests specified'",
-    "build": "echo 'Build completed - no compilation needed'",
+    "prebuild": "mkdir -p dist",
+    "build": "cp index.js dist/ && echo 'Build completed'",
     "local": "node local-test.js"
   },
   "keywords": ["lambda", "aws", "api", "nodejs"],
