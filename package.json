@@ -1,15 +1,18 @@
 {
-  "name": "test-lambda-node",
+  "name": "lambda-api-function",
   "version": "1.0.0",
-  "description": "",
+  "description": "Lambda function with multiple API endpoints",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest",
+    "build": "echo 'Build completed successfully'",
+    "local": "node local-test.js"
   },
-  "keywords": [],
+  "keywords": ["lambda", "aws", "api", "nodejs"],
   "author": "",
-  "license": "ISC",
-  "dependencies": {
-    "expresss": "^0.0.0"
+  "license": "MIT",
+  "dependencies": {},
+  "devDependencies": {
+    "jest": "^29.5.0"
   }
 }
