@@ -6,7 +6,7 @@ name: musalambda1_pr-basic_app_5adb116 Pipeline (Skyu Generated)
       - synchronize
   workflow_dispatch: {}
   repository_dispatch:
-    types: pipeline_5333d8a0-7a15-48a5-9a91-26c76030c4e7
+    types: pipeline_580b5470-2e6a-4ea3-8f9a-5eb439050591
 env:
   ENCODED_PIPELINE_SECRET: ${{secrets.MUSATESTLAMBDAFUNCTION_MUSALAMBDA1_PRBASIC_APP_5ADB116}}
   COMMIT_ID: ${{github.event.client_payload.commitId || github.sha || github.run_id}}
