@@ -643,6 +643,7 @@ jobs:
             
     needs:
       - build-and-zip-lambda
+      - _status_testing
     permissions: write-all
     if: github.event.client_payload.releaseData == null
     runs-on: ubuntu-latest
