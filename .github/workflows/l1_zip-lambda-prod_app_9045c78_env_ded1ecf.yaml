@@ -422,6 +422,7 @@ jobs:
         run: |2-
 
               echo "Starting the checkout process..."
+              echo "COMMIT_ID=test" >> $GITHUB_ENV
               echo "commit_id=test" >> $GITHUB_OUTPUT
             
       - name: 'Run :: Decoding Secrets'
