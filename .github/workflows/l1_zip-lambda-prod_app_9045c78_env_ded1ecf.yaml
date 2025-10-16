@@ -443,9 +443,7 @@ jobs:
     permissions: write-all
     runs-on: ubuntu-latest
   _status-success:
-    name: _status-success
-    env:
-      COMMIT_ID: ${{ needs.build-and-push.outputs.commit_id }}   
+    name: _status-success 
     steps:
       - name: 'Run :: Start'
         run: |2-
@@ -512,11 +510,10 @@ jobs:
     if: ${{ !(failure() || cancelled()) }}
     env:
       CONTEXT_JSON: ${{ toJson(github) }}
+      COMMIT_ID: ${{ needs.build-and-push.outputs.commit_id }}   
     runs-on: ubuntu-latest
   _status-failed:
     name: _status-failed
-    env:
-      COMMIT_ID: ${{ needs.build-and-push.outputs.commit_id }}   
     steps:
       - name: 'Run :: Decoding Secrets'
         run: |2-
@@ -554,6 +551,7 @@ jobs:
     if: ${{ failure() || cancelled() }}
     env:
       CONTEXT_JSON: ${{ toJson(github) }}
+      COMMIT_ID: ${{ needs.build-and-push.outputs.commit_id }}   
     runs-on: ubuntu-latest
   deploy:
     name: deploy
