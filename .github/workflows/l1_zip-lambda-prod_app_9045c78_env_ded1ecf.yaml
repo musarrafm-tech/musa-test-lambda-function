@@ -438,6 +438,7 @@ jobs:
     needs:
       - _status_testing
     outputs:
+      stepsCanProceed: ${{ env.STEPS_CAN_PROCEED }}
       commit_id: ${{ steps.checkout-commit.outputs.commit_id }}
     permissions: write-all
     runs-on: ubuntu-latest
