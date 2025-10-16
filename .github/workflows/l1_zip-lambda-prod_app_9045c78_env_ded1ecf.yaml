@@ -553,7 +553,7 @@ jobs:
   deploy:
     name: deploy
     env:
-      COMMIT_ID: ${{ needs.build-and-push.outputs.commit_id }}    
+      COMMIT_ID: ${{ needs.build-and-zip-lambda.outputs.commit_id }}    
     steps:
       - name: 'Run :: Start'
         run: |2-
