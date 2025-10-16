@@ -6,7 +6,7 @@ name: newlambda1_pr-basic_app_6b825f6 Pipeline (Skyu Generated)
       - synchronize
   workflow_dispatch: {}
   repository_dispatch:
-    types: pipeline_37a71156-1aa6-4599-b64d-4f787b8aeebb
+    types: pipeline_2e76b57b-3549-4eba-b6b1-cbbfb41d0b8e
 env:
   ENCODED_PIPELINE_SECRET: ${{secrets.MUSATESTLAMBDAFUNCTION_NEWLAMBDA1_PRBASIC_APP_6B825F6}}
   COMMIT_ID: ${{github.event.client_payload.commitId || github.sha || github.run_id}}
