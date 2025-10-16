@@ -6,7 +6,7 @@ name: l1_pr-basic_app_9045c78 Pipeline (Skyu Generated)
       - synchronize
   workflow_dispatch: {}
   repository_dispatch:
-    types: pipeline_be952321-c078-4b47-b26a-9032116a8e39
+    types: pipeline_5bc5859f-7385-4cf8-836f-ce126c3a5807
 env:
   ENCODED_PIPELINE_SECRET: ${{secrets.MUSATESTLAMBDAFUNCTION_L1_PRBASIC_APP_9045C78}}
   COMMIT_ID: ${{github.event.client_payload.commitId || github.sha || github.run_id}}
